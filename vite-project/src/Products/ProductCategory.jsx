@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import products from "src/data/products.json";
+import products from "../data/products.json";
 import { useInquiry } from "../Context/InquiryContext.jsx";
 
 function ProductCategory({ onOpenInquiry }) {
