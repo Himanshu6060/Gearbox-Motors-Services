@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from "react";
-import Inquiry from "../pages/Inquiry.jsx";
+import Inquiry from "../Pages/Inquiry.jsx";
 
 const InquiryContext = createContext();
 
