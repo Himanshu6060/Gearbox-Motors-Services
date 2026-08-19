@@ -10,7 +10,7 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Service from "./pages/Service.jsx";
 import Product from "./pages/Product.jsx";
-import Contact from "./Pages/Contact.jsx";
+import Contact from "./pages/Contact.jsx";
 
 import ProductCategory from "./Products/ProductCategory.jsx";
 import AboutDetails from "./Component/AboutDetails.jsx";
