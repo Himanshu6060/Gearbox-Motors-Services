@@ -1,0 +1,184 @@
+[
+  {
+    "id": 1,
+    "name": "Industrial Gearboxes",
+    "slug": "industrial-gearboxes",
+    "image": "/images/industrial-gearboxes.jpg",
+    "subCategories": [
+      {
+        "id": 101,
+        "name": "Helical Gearbox",
+        "slug": "helical-gearbox",
+        "image": "/images/Helical-Gearbox.jpg",
+        "description": "Cartridge heaters are high-density heating elements designed for molds, dies, packaging machines, and industrial equipment."
+      },
+      {
+        "id": 102,
+        "name": "Planetary Gearbox",
+        "slug": "planetary-gearbox",
+        "image": "/images/Planetary-Gearbox.jpg",
+        "description": "Tubular heaters are widely used in air, liquid, and surface heating applications with excellent durability."
+      },
+      {
+        "id": 103,
+        "name": "Extruder Gearbox",
+        "slug": "extruder-gearbox",
+        "image": "/images/Extruder-Gearbox.jpg",
+        "description": "Immersion heaters are designed to heat water, oil, chemicals, and industrial liquids efficiently."
+      },
+      {
+        "id": 104,
+        "name": "Spur Gearbox",
+        "slug": "spur-gearbox",
+        "image": "/images/Spur-Gearbox.jpg",
+        "description": "Immersion heaters are designed to heat water, oil, chemicals, and industrial liquids efficiently."
+      },
+      {
+        "id": 105,
+        "name": "Worm Gearbox",
+        "slug": "worm-gearbox",
+        "image": "/images/Worm-Gearbox.jpg",
+        "description": "Immersion heaters are designed to heat water, oil, chemicals, and industrial liquids efficiently."
+      }
+    ]
+  },
+
+  {
+    "id": 2,
+    "name": "Brake Motors",
+    "slug": "brake-motors",
+    "image": "/images/brake-motors.jpg",
+    "subCategories": [
+      {
+        "id": 201,
+        "name": "C-series Brake motors",
+        "slug": "c-series-brake-motors",
+        "image": "/images/C-series-Brake-motors.jpg",
+        "description": "Digital PID controllers provide accurate temperature control for industrial processes."
+      },
+      {
+        "id": 202,
+        "name": "K-series Brake motors",
+        "slug": "K-series-brake-motors",
+        "image": "/images/K-series-Brake-motors.jpg",
+        "description": "Thermostat controllers automatically maintain the desired temperature range."
+      },
+      {
+        "id": 203,
+        "name": "S-series Brake motors",
+        "slug": "s-series-brake-motors",
+        "image": "/images/S-series-Brake-motors.jpg",
+        "description": "Thermostat controllers automatically maintain the desired temperature range."
+      },
+      {
+        "id": 204,
+        "name": "R-series Brake motors",
+        "slug": "r-series-brake-motors",
+        "image": "/images/R-series-Brake-motors.jpg",
+        "description": "Thermostat controllers automatically maintain the desired temperature range."
+      },
+      {
+        "id": 205,
+        "name": "F-series for theater",
+        "slug": "f-series-Brake-motors-for-theater",
+        "image": "/images/F-series-Brake-motors-for-theater.jpg",
+        "description": "Thermostat controllers automatically maintain the desired temperature range."
+      }
+    ]
+  },
+
+  {
+    "id": 3,
+    "name": "Electric Motors",
+    "slug": "electric-motors",
+    "image": "/images/electric-motors.jpg",
+    "subCategories": [
+      {
+        "id": 301,
+        "name": "IE2 Motors",
+        "slug": "IE2-motors",
+        "image": "/images/IE2-Motors.jpg",
+        "description": "RTD sensors provide precise temperature measurement for industrial automation."
+      },
+      {
+        "id": 302,
+        "name": "IE3 Motors",
+        "slug": "IE3-motors",
+        "image": "/images/IE3-Motors.jpg",
+        "description": "Thermocouples are suitable for measuring high temperatures in industrial environments."
+      },
+      {
+        "id": 303,
+        "name": "IE4 Motors",
+        "slug": "IE4-motors",
+        "image": "/images/IE4-Motors.jpg",
+        "description": "Thermocouples are suitable for measuring high temperatures in industrial environments."
+      },
+      {
+        "id": 304,
+        "name": "Three-Phase Motors",
+        "slug": "three-phase-motors",
+        "image": "/images/Three-Phase-Motors.jpg",
+        "description": "Thermocouples are suitable for measuring high temperatures in industrial environments."
+      },
+      {
+        "id": 305,
+        "name": "Single-Phase Motors",
+        "slug": "single-phase-motors",
+        "image": "/images/Single-Phase-Motors.jpg",
+        "description": "Thermocouples are suitable for measuring high temperatures in industrial environments."
+      }
+    ]
+  },
+
+  {
+    "id": 4,
+    "name": "Industrial Couplings",
+    "slug": "industrial-couplings",
+    "image": "/images/industrial-couplings.jpg",
+    "subCategories": [
+      {
+        "id": 401,
+        "name": "Disc Couplings",
+        "slug": "disc-couplings",
+        "image": "/images/Disc-Couplings.jpg",
+        "description": "RTD sensors provide precise temperature measurement for industrial automation."
+      },
+      {
+        "id": 402,
+        "name": "Flexible Couplings",
+        "slug": "flexible-couplings",
+        "image": "/images/Flexible-Couplings.jpg",
+        "description": "Thermocouples are suitable for measuring high temperatures in industrial environments."
+      },
+      {
+        "id": 403,
+        "name": "Gear Couplings",
+        "slug": "gear-couplings",
+        "image": "/images/Gear-Couplings.jpg",
+        "description": "Thermocouples are suitable for measuring high temperatures in industrial environments."
+      },
+      {
+        "id": 404,
+        "name": "Roller Chain Couplings",
+        "slug": "roller-chain-couplings",
+        "image": "/images/Roller-Chain-Couplings.jpg",
+        "description": "Thermocouples are suitable for measuring high temperatures in industrial environments."
+      },
+      {
+        "id": 405,
+        "name": "Jaw Couplings",
+        "slug": "jaw-couplings",
+        "image": "/images/Jaw-Couplings.jpg",
+        "description": "Thermocouples are suitable for measuring high temperatures in industrial environments."
+      },
+      {
+        "id": 406,
+        "name": "Torque Limiters",
+        "slug": "torque-limiters",
+        "image": "/images/Torque-Limiters.jpg",
+        "description": "Thermocouples are suitable for measuring high temperatures in industrial environments."
+      }
+    ]
+  }
+]
