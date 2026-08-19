@@ -6,11 +6,11 @@ import Footer from "./Component/Footer.jsx";
 import RouteLoader from "./Component/RouteLoader.jsx";
 import ScrollToTop from "./Component/ScrollToTop.jsx";
 
-import Home from "./pages/Home.jsx";
-import About from "./pages/About.jsx";
-import Service from "./pages/Service.jsx";
-import Product from "./pages/Product.jsx";
-import Contact from "./pages/Contact.jsx";
+import Home from "./Pages/Home.jsx";
+import About from "./Pages/About.jsx";
+import Service from "./Pages/Service.jsx";
+import Product from "./Pages/Product.jsx";
+import Contact from "./Pages/Contact.jsx";
 
 import ProductCategory from "./Products/ProductCategory.jsx";
 import AboutDetails from "./Component/AboutDetails.jsx";
