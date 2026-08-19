@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import products from "../data/products.jsx";
+import products from "../Data/products.jsx";
 
 
 function Product() {
