@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import products from "../data/products.json";
+import products from "../data/products.jsx";
 
 function Inquiry({
   isOpen,
