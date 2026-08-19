@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
-import products from "../data/products.json";
+import products from "./data/products.json";
 
 
 const ProductSection = () => {
