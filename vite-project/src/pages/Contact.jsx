@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // import "./Contact.css";
 
 const Contact = () => {
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
   const [formData, setFormData] = useState({
     name: "",
     company: "",
@@ -90,7 +91,7 @@ const Contact = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/contact",
+        `${API_URL}/api/contact`,
         {
           method: "POST",
 
