@@ -94,7 +94,7 @@ function Inquiry({
 
     const timeout = setTimeout(() => {
       controller.abort();
-    }, 15000); // 15 seconds
+    }, 30000); // 15 seconds
 
     try {
       const response = await fetch(
