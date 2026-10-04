@@ -79,50 +79,29 @@ function Inquiry({
   };
 
   // Submit inquiry
+    // Submit inquiry
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Prevent duplicate submission
     if (loading) return;
 
     setLoading(true);
     setSuccessMessage("");
     setErrorMessage("");
 
-    // // Abort request if server takes too long
-    // const controller = new AbortController();
-
-    // const timeout = setTimeout(() => {
-    //   controller.abort();
-    // }, 60000); // 15 seconds
-
     try {
-      const response = await fetch(
-        `${API_URL}/api/inquiry`,
-        {
-          method: "POST",
+      const response = await fetch(`${API_URL}/api/inquiry`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          mobile: formData.mobile.trim(),
+          product: formData.product,
+          message: formData.message.trim(),
+        }),
+      });
 
-          headers: {
-            "Content-Type": "application/json",
-          },
-
-          body: JSON.stringify({
-            name: formData.name.trim(),
-            email: formData.email.trim(),
-            mobile: formData.mobile.trim(),
-            product: formData.product,
-            message: formData.message.trim(),
-          }),
-
-          // signal: controller.signal,
-        }
-      );
-
-      clearTimeout(timeout);
-
-      // Safely parse response
       let data = {};
-
       try {
         data = await response.json();
       } catch {
@@ -130,18 +109,12 @@ function Inquiry({
       }
 
       if (!response.ok) {
-        throw new Error(
-          data.message || "Failed to submit inquiry."
-        );
+        throw new Error(data.message || "Failed to submit inquiry.");
       }
 
-      // Success
-      setSuccessMessage(
-        data.message ||
-          "Your inquiry has been submitted successfully!"
-      );
+      // Success - Form clean karo
+      setSuccessMessage(data.message || "Your inquiry has been submitted successfully!");
 
-      // Clear form
       setFormData({
         name: "",
         email: "",
@@ -150,29 +123,15 @@ function Inquiry({
         message: "",
       });
 
-      // Close popup after 2 seconds
+      // 2 sec baad popup band karo
       setTimeout(() => {
         onClose();
         setSuccessMessage("");
       }, 2000);
+
     } catch (error) {
-      clearTimeout(timeout);
-
-      console.error(
-        "Inquiry submission error:",
-        error
-      );
-
-      if (error.name === "AbortError") {
-        setErrorMessage(
-          "The server is taking too long to respond. Please try again."
-        );
-      } else {
-        setErrorMessage(
-          error.message ||
-            "Something went wrong. Please try again."
-        );
-      }
+      console.error("Inquiry submission error:", error);
+      setErrorMessage(error.message || "Something went wrong. Please try again.");
     } finally {
       setLoading(false);
     }
