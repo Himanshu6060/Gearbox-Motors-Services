@@ -28,18 +28,26 @@ console.log("ADMIN_EMAIL:", process.env.ADMIN_EMAIL);
 // CORS
 // ==========================================
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "http://localhost:3000",
+  "https://industrialsalesservices.vercel.app",
+];
+
 app.use(
   cors({
-    origin:
-      process.env.FRONTEND_URL ||
-      "http://localhost:5173",
-
-    methods: ["GET", "POST"],
-
-    allowedHeaders: ["Content-Type"],
+    origin: function (origin, callback) {
+      if (!origin) return callback(null, true);
+      if (allowedOrigins.includes(origin) || origin.endsWith(".vercel.app")) {
+        return callback(null, true);
+      }
+      return callback(new Error("Not allowed by CORS: " + origin));
+    },
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
   })
 );
-
 
 // ==========================================
 // BODY PARSER
