@@ -89,12 +89,12 @@ function Inquiry({
     setSuccessMessage("");
     setErrorMessage("");
 
-    // Abort request if server takes too long
-    const controller = new AbortController();
+    // // Abort request if server takes too long
+    // const controller = new AbortController();
 
-    const timeout = setTimeout(() => {
-      controller.abort();
-    }, 60000); // 15 seconds
+    // const timeout = setTimeout(() => {
+    //   controller.abort();
+    // }, 60000); // 15 seconds
 
     try {
       const response = await fetch(
@@ -114,7 +114,7 @@ function Inquiry({
             message: formData.message.trim(),
           }),
 
-          signal: controller.signal,
+          // signal: controller.signal,
         }
       );
 
